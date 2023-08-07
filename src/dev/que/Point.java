@@ -26,7 +26,7 @@ public class Point implements Mappable {
     }
 
     @Override
-    public void render() {
-        System.out.printf(Locale.US,"[%f, %f]", coords[0], coords[1]);
+    public String render() {
+        return String.format(Locale.US,"[%f, %f]", coords[0], coords[1]);
     }
 }
